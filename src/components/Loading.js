@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { TextIcon, LoadingIcon } from 'assets/svgIcons';
 
 const Loading = () => {

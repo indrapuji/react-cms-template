@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import WelcomeCard from 'components/WelcomeCard';
 import { useNavigate } from 'react-router-dom';
+
+import WelcomeCard from 'components/WelcomeCard';
 
 const ForgetPassword = () => {
    const navigate = useNavigate();

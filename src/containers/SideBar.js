@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { TextIconWhite } from 'assets/svgIcons';
 
 const SideBar = () => {

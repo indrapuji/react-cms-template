@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 import Loading from 'components/Loading';
-
 import routes from 'routes';
-import { Container } from 'react-bootstrap';
+
 
 const Content = () => {
    return (
