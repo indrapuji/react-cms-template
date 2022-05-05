@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form-control::placeholder {
+  color: #8692A6;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}

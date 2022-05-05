@@ -1,0 +1,9 @@
+export { default as LoadingIcon } from './LoadingIcon';
+export { default as TextIcon } from './TextIcon';
+export { default as TextIconWhite } from './TextIconWhite';
+export { default as DotsGrup } from './DotsGrup';
+export { default as QuoteIcon } from './QuoteIcon';
+export { default as ElbowIcon } from './ElbowIcon';
+export { default as CircleIcon } from './CircleIcon';
+export { default as LeftIcon } from './LeftIcon';
+export { default as RightIcon } from './RightIcon';

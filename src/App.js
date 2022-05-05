@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Loading from 'components/Loading';
+
+//Containers
+const Layout = React.lazy(() => import('containers/Layout'));
+
+//Pages
+const Login = React.lazy(() => import('pages/Login'));
+const ForgetPassword = React.lazy(() => import('pages/ForgetPassword'));
+const NewPassword = React.lazy(() => import('pages/NewPassword'));
+
+const loading = (
+   <div style={{ width: '100vw', height: '100vh' }}>
+      <Loading />
+   </div>
+);
+
+const App = () => {
+   return (
+      <React.Suspense fallback={loading}>
+         <Routes>
+            <Route exact path='/login' element={<Login />} />
+            <Route exact path='/forget' element={<ForgetPassword />} />
+            <Route exact path='/new-password' element={<NewPassword />} />
+            <Route path='*' element={<Layout />} />
+         </Routes>
+      </React.Suspense>
+   );
+};
 
 export default App;
