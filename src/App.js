@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import 'styles/globalStyle.css';
+import 'scss/globalStyle.scss';
 
 //Components
 import Loading from 'components/Loading';

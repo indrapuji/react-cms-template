@@ -1,5 +1,5 @@
 import React from 'react';
-import { SidebarIcon, SidebarProfile, SidebarNav } from 'core';
+import { SidebarIcon, SidebarProfile, SidebarNav, SidebarBottom } from 'core';
 
 import { navigate } from './Nav';
 
@@ -9,6 +9,7 @@ const SideBar = () => {
             <SidebarIcon />
             <SidebarProfile />
             <SidebarNav item={navigate} />
+            <SidebarBottom />
         </div>
     );
 };

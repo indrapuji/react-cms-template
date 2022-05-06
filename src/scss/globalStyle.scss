@@ -1,0 +1,82 @@
+@use "../themes/colors";
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-sidebar {
+    height: 100vh;
+    width: 20vw;
+    background-color: colors.$secondary-color;
+    position: relative;
+}
+
+.main-content {
+    width: 80vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.profile-container {
+    margin-top: 30px;
+    margin-left: 1.5vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+}
+
+.profile-name {
+    font-weight: 700;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.profile-role {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.sidebar-bottom-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    background-color:#ffc422 ;
+    bottom: 0px;
+    height: 5vh;
+    width: 20vw;
+}
+
+.sidebar-bottom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 5vh;
+    height: 5vh;
+    background-color: white;
+}
+
+.primary-bg-color {
+    background-color: colors.$primary-color;
+}
+
+.secondary-bg-color {
+    background-color: colors.$secondary-color;
+}

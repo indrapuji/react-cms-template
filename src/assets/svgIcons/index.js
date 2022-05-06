@@ -10,3 +10,4 @@ export { default as RightIcon } from './RightIcon';
 export { default as DashboardIcon } from './DashboardIcon';
 export { default as BellIcon } from './BellIcon';
 export { default as SettingIcon } from './SettingIcon';
+export { default as HomeIcon } from './HomeIcon';

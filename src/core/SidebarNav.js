@@ -7,12 +7,12 @@ const SidebarNav = ({ item }) => {
     const path = location.pathname;
 
     return (
-        <div className="mt-5">
+        <div className="mt-3">
             {item.map((nav, idx) => {
                 return (
                     <div key={idx} style={{ display: 'flex', alignItems: 'center', height: 60, justifyContent: 'space-between', cursor: 'pointer' }} onClick={() => navigate(nav.to)}>
                         <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <div className="mx-5 nav-icon" style={{ width: 30, height: 30 }}>
+                            <div className="mx-3 nav-icon" style={{ width: 30, height: 30 }}>
                                 {nav.icon}
                             </div>
                             <div style={{ fontWeight: 700, fontSize: 20, color: nav.to === path ? '#43568E' : 'white' }}>{nav.name}</div>
