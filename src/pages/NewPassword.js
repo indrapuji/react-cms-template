@@ -45,7 +45,7 @@ const NewPassword = () => {
     };
 
     return (
-        <div className="main flex-center primary-color">
+        <div className="main flex-center primary-bg-color">
             <WelcomeCard
                 bgColor="#FFB222"
                 titleText={content}

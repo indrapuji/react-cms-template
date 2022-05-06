@@ -4,7 +4,7 @@ import { TextIcon, LoadingIcon } from 'assets/svgIcons';
 
 const Loading = () => {
     return (
-        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent' }}>
+        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <TextIcon />
             <div style={{ marginBottom: 40, marginTop: 40 }}>
                 <LoadingIcon />

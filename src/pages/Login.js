@@ -59,7 +59,7 @@ const Login = () => {
     return (
         <div>
             <Notify onClose={() => setVisible(false)} visible={visible} status={status} message={message} />
-            <div className="main flex-center primary-color">
+            <div className="main flex-center primary-bg-color">
                 <WelcomeCard
                     bgColor="#43568E"
                     titleText={content}

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+//Components
 import SideBar from './SideBar';
 import Content from './Content';
 
@@ -14,12 +15,10 @@ const Layout = () => {
         }
     }, [navigate]);
     return (
-        <div style={{ display: 'flex' }}>
+        <div className="d-flex">
             <SideBar />
-            <div>
-                <div style={{ width: '80vw', height: '100vh', overflow: 'scroll' }}>
-                    <Content />
-                </div>
+            <div className="main-content">
+                <Content />
             </div>
         </div>
     );

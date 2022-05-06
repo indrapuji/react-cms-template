@@ -5,7 +5,7 @@ import { navigate } from './Nav';
 
 const SideBar = () => {
     return (
-        <div style={{ height: '100vh', width: '20vw', backgroundColor: '#FFB222' }}>
+        <div className="main-sidebar">
             <SidebarIcon />
             <SidebarProfile />
             <SidebarNav item={navigate} />

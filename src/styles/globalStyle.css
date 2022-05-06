@@ -1,0 +1,61 @@
+.main {
+    width : 100vw;
+    height: 100vh;
+}
+
+.flex-center {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.main-sidebar {
+    height          : 100vh;
+    width           : 20vw;
+    background-color: #FFB222;
+}
+
+.main-content {
+    width   : 80vw;
+    height  : 100vh;
+    overflow: scroll;
+}
+
+.profile-container {
+    margin-top : 60px;
+    margin-left: 1.5vw;
+    height     : 70px;
+    display    : flex;
+    align-items: center;
+}
+
+.profile-avatar {
+    width        : 70px;
+    height       : 70px;
+    border-radius: 50px;
+    border-width : 2px;
+    border-color : #FFFFFF;
+    border-style : solid;
+}
+
+.profile-name {
+    font-weight: 700;
+    font-size  : 21px;
+    color      : #FFFFFF;
+}
+
+.profile-role {
+    font-weight: 600;
+    font-size  : 14px;
+    color      : #FFFFFF;
+}
+
+
+
+.primary-bg-color {
+    background-color: #9BD5E3;
+}
+
+.secondary-bg-color {
+    background-color: #FFB222;
+}

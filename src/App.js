@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import 'styles/globalStyle.css';
 
+//Components
 import Loading from 'components/Loading';
 
 //Containers

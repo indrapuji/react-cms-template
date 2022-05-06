@@ -7,13 +7,15 @@ const SidebarNav = ({ item }) => {
     const path = location.pathname;
 
     return (
-        <div style={{ marginTop: 90, marginLeft: '2.5vw' }}>
+        <div className="mt-5">
             {item.map((nav, idx) => {
                 return (
                     <div key={idx} style={{ display: 'flex', alignItems: 'center', height: 60, justifyContent: 'space-between', cursor: 'pointer' }} onClick={() => navigate(nav.to)}>
                         <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <div style={{ width: 30, height: 30 }}>{nav.icon}</div>
-                            <div style={{ marginLeft: 35, fontWeight: 700, fontSize: 20, color: nav.to === path ? '#43568E' : 'white' }}>{nav.name}</div>
+                            <div className="mx-5 nav-icon" style={{ width: 30, height: 30 }}>
+                                {nav.icon}
+                            </div>
+                            <div style={{ fontWeight: 700, fontSize: 20, color: nav.to === path ? '#43568E' : 'white' }}>{nav.name}</div>
                         </div>
                         <div style={{ height: 40, width: 6, backgroundColor: nav.to === path ? '#43568E' : null }} />
                     </div>
