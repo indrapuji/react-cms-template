@@ -73,7 +73,7 @@ const Login = () => {
                     bgColor="#43568E"
                     titleText={content}
                     forgetPass
-                    register
+                    navigateRegister
                     firstInputTitle={'Full Name'}
                     firstInputType={'text'}
                     firstInputPlaceholder={'type your full name'}

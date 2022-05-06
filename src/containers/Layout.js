@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import SideBar from './SideBar';
-import Header from './Header';
+// import Header from './Header';
 import Content from './Content';
 
 const Layout = () => {
@@ -18,11 +18,11 @@ const Layout = () => {
         <div style={{ display: 'flex' }}>
             <SideBar />
             <div>
-                <Header />
+                {/* <Header /> */}
                 <div
                     style={{
                         width: '80vw',
-                        height: '90vh',
+                        height: '100vh',
                         overflow: 'scroll',
                     }}
                 >

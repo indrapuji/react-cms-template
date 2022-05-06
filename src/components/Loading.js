@@ -12,6 +12,7 @@ const Loading = () => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
+                backgroundColor: 'transparent',
             }}
         >
             <TextIcon />

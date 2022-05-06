@@ -10,7 +10,7 @@ const WelcomeCard = (props) => {
         bgColor,
         titleText,
         forgetPass,
-        register,
+        navigateRegister,
         login,
         firstInputTitle,
         firstInputType,
@@ -122,7 +122,7 @@ const WelcomeCard = (props) => {
                                 </Button>
                             </div>
                         </Form>
-                        {register && (
+                        {navigateRegister && (
                             <div style={{ fontWeight: 400, fontSize: 14, marginTop: 9, color: '#CCCCCC', display: 'flex', justifyContent: 'center' }}>
                                 <div>Don’t have an account?</div>
                                 <div style={{ marginLeft: 5, color: '#43568E', fontStyle: 'italic', textDecoration: 'underline', cursor: 'pointer' }}>Register</div>
