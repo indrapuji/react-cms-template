@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
 import Loading from 'components/Loading';
 
@@ -12,7 +13,7 @@ const ForgetPassword = React.lazy(() => import('pages/ForgetPassword'));
 const NewPassword = React.lazy(() => import('pages/NewPassword'));
 
 const loading = (
-    <div style={{ width: '100vw', height: '100vh' }}>
+    <div className="main">
         <Loading />
     </div>
 );

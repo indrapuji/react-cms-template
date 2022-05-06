@@ -41,16 +41,7 @@ const ForgetPassword = () => {
     };
 
     return (
-        <div
-            style={{
-                backgroundColor: '#9BD5E3',
-                width: '100vw',
-                height: '100vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}
-        >
+        <div className="main flex-center primary-color">
             <WelcomeCard
                 bgColor="#FFB222"
                 titleText={content}
