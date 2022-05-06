@@ -7,3 +7,6 @@ export { default as ElbowIcon } from './ElbowIcon';
 export { default as CircleIcon } from './CircleIcon';
 export { default as LeftIcon } from './LeftIcon';
 export { default as RightIcon } from './RightIcon';
+export { default as DashboardIcon } from './DashboardIcon';
+export { default as BellIcon } from './BellIcon';
+export { default as SettingIcon } from './SettingIcon';
