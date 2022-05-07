@@ -7,9 +7,9 @@ import { navigate } from './Nav';
 const SideBar = () => {
     const sidebar = useSelector((state) => state.sidebarReducers.sidebar);
     return (
-        <div className={!sidebar ? 'main-sidebar' : 'main-sidebar-close'}>
+        <div className={sidebar ? 'main-sidebar' : 'main-sidebar-close'}>
             <SidebarIcon />
-            {!sidebar ? <SidebarProfile /> : null}
+            {sidebar ? <SidebarProfile /> : null}
             <SidebarNav item={navigate} />
             <SidebarOut />
             <SidebarBottom />

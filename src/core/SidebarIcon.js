@@ -12,7 +12,7 @@ const SidebarIcon = () => {
 
     return (
         <div style={{ display: 'flex', justifyContent: 'center', paddingTop: 30, cursor: 'pointer' }} onClick={() => navigate('/dashboard')}>
-            {!sidebar ? <TextIconWhite /> : <HomeIcon />}
+            {sidebar ? <TextIconWhite /> : <HomeIcon />}
         </div>
     );
 };

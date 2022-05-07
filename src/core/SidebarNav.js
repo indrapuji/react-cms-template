@@ -21,11 +21,11 @@ const SidebarNav = ({ item }) => {
                             <div className="mx-3" style={{ width: 30, height: 30 }}>
                                 {nav.to === path ? nav.iconActive : nav.icon}
                             </div>
-                            {!sidebar ? (
+                            {sidebar ? (
                                 <div style={{ fontWeight: 700, fontSize: 20, color: nav.to === path ? '#43568E' : 'white' }}>{nav.name}</div>
                             ) : null}
                         </div>
-                        {!sidebar ? <div style={{ height: 40, width: 6, backgroundColor: nav.to === path ? '#43568E' : null }} /> : null}
+                        {sidebar ? <div style={{ height: 40, width: 6, backgroundColor: nav.to === path ? '#43568E' : null }} /> : null}
                     </div>
                 );
             })}

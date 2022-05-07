@@ -20,7 +20,7 @@ const Layout = () => {
     return (
         <div className="d-flex">
             <SideBar />
-            <div className={!sidebar ? 'main-content' : 'main-content-close'}>
+            <div className={sidebar ? 'main-content' : 'main-content-close'}>
                 <Content />
             </div>
         </div>

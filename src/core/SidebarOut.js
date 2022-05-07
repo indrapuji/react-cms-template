@@ -23,7 +23,7 @@ const SidebarOut = () => {
                     <div className="mx-3" style={{ width: 30, height: 30 }}>
                         <OutIcon />
                     </div>
-                    <div style={{ fontWeight: 700, fontSize: 20, color: 'white' }}>{!sidebar ? 'Sign Out' : null}</div>
+                    <div style={{ fontWeight: 700, fontSize: 20, color: 'white' }}>{sidebar ? 'Sign Out' : null}</div>
                 </div>
             </div>
         </div>

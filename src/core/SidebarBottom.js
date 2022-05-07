@@ -12,9 +12,9 @@ const SidebarBottom = () => {
         dispatch(changeSidebar(!sidebar));
     };
     return (
-        <div className={!sidebar ? 'sidebar-bottom-container' : 'sidebar-bottom-container-close'}>
+        <div className={sidebar ? 'sidebar-bottom-container' : 'sidebar-bottom-container-close'}>
             <div className="sidebar-bottom-button" onClick={() => handleSidebar()}>
-                {!sidebar ? <LeftIcon /> : <RightIcon />}
+                {sidebar ? <LeftIcon /> : <RightIcon />}
             </div>
         </div>
     );
