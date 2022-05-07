@@ -71,9 +71,20 @@
     background-color: colors.$secondary-color;
     position: relative;
 }
+.main-sidebar-close {
+    height: size.$height-100;
+    width: size.$width-5;
+    background-color: colors.$secondary-color;
+    position: relative;
+}
 
 .main-content {
     width: size.$width-80;
+    height: size.$height-100;
+    overflow: scroll;
+}
+.main-content-close {
+    width: size.$width-95;
     height: size.$height-100;
     overflow: scroll;
 }
@@ -117,12 +128,24 @@
     width: size.$width-20;
 }
 
+.sidebar-bottom-container-close {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffc422;
+    bottom: 0px;
+    height: 5vh;
+    width: size.$width-5;
+}
+
+
+
 .sidebar-bottom-button {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 5vh;
+    width: 5vw;
     height: 5vh;
     background-color: white;
 }

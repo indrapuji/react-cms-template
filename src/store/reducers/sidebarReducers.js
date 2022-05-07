@@ -1,17 +1,17 @@
 const initialState = {
-    favorites: [],
+    sidebar: true,
 };
 
-function favReducers(state = initialState, action) {
-    if (action.type === 'ADDFAV') {
-        return { ...state, favorites: state.favorites.concat(action.payload) };
+function sidebarReducers(state = initialState, action) {
+    if (action.type === 'CHANGE') {
+        return { ...state, sidebar: action.payload };
     }
     return state;
 }
 
 //ex to use reducers
 
-// function favReducers(state = initialState, action) {
+// function favReducsidebar(state = initialState, action) {
 //     if (action.type === 'GETUSER') {
 //         return { ...state, users: action.payload };
 //     } else if (action.type === 'DETAILUSER') {
@@ -20,4 +20,4 @@ function favReducers(state = initialState, action) {
 //     return state;
 // }
 
-export default favReducers;
+export default sidebarReducers;

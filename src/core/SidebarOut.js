@@ -1,9 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { OutIcon } from 'assets/svgIcons';
+import { useSelector } from 'react-redux';
 
 const SidebarOut = () => {
     const navigate = useNavigate();
+
+    const sidebar = useSelector((state) => state.sidebarReducers.sidebar);
 
     const handleSignout = () => {
         localStorage.clear();
@@ -17,10 +20,10 @@ const SidebarOut = () => {
                 onClick={handleSignout}
             >
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <div className="mx-3 nav-icon" style={{ width: 30, height: 30 }}>
+                    <div className="mx-3" style={{ width: 30, height: 30 }}>
                         <OutIcon />
                     </div>
-                    <div style={{ fontWeight: 700, fontSize: 20, color: 'white' }}>Sign Out</div>
+                    <div style={{ fontWeight: 700, fontSize: 20, color: 'white' }}>{!sidebar ? 'Sign Out' : null}</div>
                 </div>
             </div>
         </div>

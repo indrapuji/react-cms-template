@@ -50,7 +50,6 @@ const Login = () => {
                 setMessage('Wrong Password');
                 setVisible(true);
             }
-            console.log(formData);
         } catch (error) {
             console.log(error);
         }
