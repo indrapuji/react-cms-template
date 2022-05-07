@@ -56,11 +56,11 @@ const WelcomeCard = (props) => {
                         <div className="card-title-text">
                             Welcome back to
                             <br />
-                            BRInvestYuk!
+                            CMS-Template
                         </div>
                     </div>
                     <div className="mt-50" style={{ width: '70%' }}>
-                        <Form>
+                        <Form onSubmit={onSubmit}>
                             {firstInputTitle && (
                                 <Form.Group className="mb-3">
                                     <Form.Label className="input-title">{firstInputTitle}</Form.Label>
@@ -95,7 +95,7 @@ const WelcomeCard = (props) => {
                                     variant={enabled === true ? 'primary' : 'secondary'}
                                     disabled={!enabled}
                                     className="button-text"
-                                    onClick={onSubmit}
+                                    type="submit"
                                 >
                                     {buttonTitle}
                                 </Button>
