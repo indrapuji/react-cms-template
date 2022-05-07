@@ -56,7 +56,7 @@ const WelcomeCard = (props) => {
                         <div className="card-title-text">
                             Welcome back to
                             <br />
-                            BRInvestYuk!
+                            CMS-Template
                         </div>
                     </div>
                     <div className="mt-50" style={{ width: '70%' }}>
