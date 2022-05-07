@@ -41,11 +41,11 @@ const ForgetPassword = () => {
     };
 
     return (
-        <div className="main flex-center primary-bg-color">
+        <div className="main flex-center-center primary-bg-color">
             <WelcomeCard
                 bgColor="#FFB222"
-                titleText={content}
-                login
+                subtitleText={content}
+                navigateLogin
                 firstInputTitle={'Email'}
                 firstInputType={'email'}
                 firstInputPlaceholder={'Type your email'}

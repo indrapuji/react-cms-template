@@ -1,26 +1,80 @@
-@use "../themes/colors";
+@use 'themes/colors';
+@use 'themes/size';
 
-.main {
-    width: 100vw;
-    height: 100vh;
+.primary-bg-color {
+    background-color: colors.$primary-color;
 }
 
-.flex-center {
+.secondary-bg-color {
+    background-color: colors.$secondary-color;
+}
+
+.main {
+    width: size.$width-100;
+    height: size.$height-100;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.flex-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.flex-center-end {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main-sidebar {
-    height: 100vh;
-    width: 20vw;
+    height: size.$height-100;
+    width: size.$width-20;
     background-color: colors.$secondary-color;
     position: relative;
 }
 
 .main-content {
-    width: 80vw;
-    height: 100vh;
+    width: size.$width-80;
+    height: size.$height-100;
     overflow: scroll;
 }
 
@@ -57,10 +111,10 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    background-color:#ffc422 ;
+    background-color: #ffc422;
     bottom: 0px;
     height: 5vh;
-    width: 20vw;
+    width: size.$width-20;
 }
 
 .sidebar-bottom-button {
@@ -73,10 +127,83 @@
     background-color: white;
 }
 
-.primary-bg-color {
-    background-color: colors.$primary-color;
+.sidebar-bottom-button:hover {
+    background-color: blue;
 }
 
-.secondary-bg-color {
-    background-color: colors.$secondary-color;
+.main-card-container {
+    width: size.$width-60;
+    height: size.$height-90;
+    border-radius: 30px;
+    display: flex;
 }
+
+.left-card-container {
+    width: 48%;
+    height: size.$size-100-pc;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+}
+
+.right-card-container {
+    width: 52%;
+    height: size.$size-100-pc;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ffffff;
+}
+
+.card-title-text {
+    font-weight: 700;
+    font-size: 25px;
+    color: #43568E;
+}
+
+.card-subtitle-text {
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+}
+
+.card-input-bottom-text {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 9px;
+    font-style: italic;
+    cursor: pointer;
+    color: #43568E;
+}
+
+.button-bottom-text-container {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 9px;
+    color: #cccccc;
+}
+
+.button-bottom-text-left {
+    margin-left: 5px;
+    color: #43568E;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+}
+
+
+
+
+
+
+

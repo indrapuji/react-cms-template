@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import 'scss/globalStyle.scss';
+import 'scss/fonts.scss';
+import 'scss/spacing.scss';
 
 //Components
 import Loading from 'components/Loading';

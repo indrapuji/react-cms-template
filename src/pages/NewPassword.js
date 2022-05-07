@@ -45,10 +45,10 @@ const NewPassword = () => {
     };
 
     return (
-        <div className="main flex-center primary-bg-color">
+        <div className="main flex-center-center primary-bg-color">
             <WelcomeCard
                 bgColor="#FFB222"
-                titleText={content}
+                subtitleText={content}
                 firstInputTitle={'New Password'}
                 firstInputType={'password'}
                 firstInputPlaceholder={'Type your new password'}

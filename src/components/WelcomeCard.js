@@ -8,10 +8,10 @@ const WelcomeCard = (props) => {
     const navigate = useNavigate();
     const {
         bgColor,
-        titleText,
+        subtitleText,
         forgetPass,
         navigateRegister,
-        login,
+        navigateLogin,
         firstInputTitle,
         firstInputType,
         firstInputPlaceholder,
@@ -25,30 +25,21 @@ const WelcomeCard = (props) => {
         onSubmit,
     } = props;
     return (
-        <div style={{ width: '60vw', height: '90vh', borderRadius: 30, display: 'flex' }}>
-            <div
-                style={{
-                    width: '48%',
-                    backgroundColor: bgColor,
-                    height: '100%',
-                    borderTopLeftRadius: 30,
-                    borderBottomLeftRadius: 30,
-                    position: 'relative',
-                }}
-            >
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '90%' }}>
-                    <div style={{ display: 'flex', alignItems: 'end', justifyContent: 'center' }}>
+        <div className="main-card-container">
+            <div className="left-card-container" style={{ backgroundColor: bgColor }}>
+                <div className="flex-center-center flex-column" style={{ height: '90%' }}>
+                    <div className="flex-center-end">
                         <TextIconWhite />
                         <div style={{ marginLeft: 2, marginBottom: 3 }}>
                             <DotsGrup />
                         </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 80, flexDirection: 'column', width: '85%' }}>
+                    <div className="flex-column-center mt-80" style={{ width: '85%' }}>
                         <div style={{ marginBottom: 28 }}>
                             <QuoteIcon />
                         </div>
-                        <p style={{ fontWeight: 700, color: 'white', fontSize: 14 }}>{titleText}</p>
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 30, marginRight: 30 }}>
+                        <p className="card-subtitle-text">{subtitleText}</p>
+                        <div className="flex justify-end mt-30" style={{ marginRight: 30 }}>
                             <ElbowIcon />
                         </div>
                     </div>
@@ -59,24 +50,24 @@ const WelcomeCard = (props) => {
                     </div>
                 )}
             </div>
-            <div style={{ width: '52%', backgroundColor: 'white', height: '100%', borderTopRightRadius: 30, borderBottomRightRadius: 30 }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '90%', marginTop: 80 }}>
+            <div className="right-card-container">
+                <div className="flex-column align-center mt-80" style={{ height: '90%' }}>
                     <div style={{ width: '70%' }}>
-                        <p style={{ fontWeight: '700', fontSize: 25, color: '#43568E' }}>
+                        <div className="card-title-text">
                             Welcome back to
                             <br />
                             BRInvestYuk!
-                        </p>
+                        </div>
                     </div>
-                    <div style={{ width: '70%', marginTop: 50 }}>
+                    <div className="mt-50" style={{ width: '70%' }}>
                         <Form>
                             {firstInputTitle && (
                                 <Form.Group className="mb-3">
-                                    <Form.Label style={{ fontWeight: '700', color: '#696F79', fontSize: 14 }}>{firstInputTitle}</Form.Label>
+                                    <Form.Label className="input-title">{firstInputTitle}</Form.Label>
                                     <Form.Control
                                         type={firstInputType}
                                         placeholder={firstInputPlaceholder}
-                                        style={{ fontWeight: '400', color: '#546177', fontSize: 14, height: 50 }}
+                                        className="text-input-box"
                                         onChange={onFirstInputChange}
                                     />
                                 </Form.Group>
@@ -84,30 +75,18 @@ const WelcomeCard = (props) => {
 
                             {secondInputTitle && (
                                 <Form.Group className="mb-3">
-                                    <Form.Label style={{ fontWeight: '700', color: '#696F79', fontSize: 14 }}>{secondInputTitle}</Form.Label>
+                                    <Form.Label className="input-title">{secondInputTitle}</Form.Label>
                                     <Form.Control
                                         type={secondInputType}
                                         placeholder={secondInputPlaceholder}
-                                        style={{ fontWeight: '400', color: '#546177', fontSize: 14, height: 50 }}
+                                        className="text-input-box"
                                         onChange={onSecondInputChange}
                                     />
                                 </Form.Group>
                             )}
 
                             {forgetPass && (
-                                <div
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'flex-end',
-                                        color: '#43568E',
-                                        fontWeight: 400,
-                                        fontSize: 14,
-                                        marginTop: 9,
-                                        fontStyle: 'italic',
-                                        cursor: 'pointer',
-                                    }}
-                                    onClick={() => navigate('/forget')}
-                                >
+                                <div className="card-input-bottom-text" onClick={() => navigate('/forget')}>
                                     Forget password?
                                 </div>
                             )}
@@ -115,7 +94,7 @@ const WelcomeCard = (props) => {
                                 <Button
                                     variant={enabled === true ? 'primary' : 'secondary'}
                                     disabled={!enabled}
-                                    style={{ fontSize: 13, fontWeight: '700', height: 50, marginTop: 9 }}
+                                    className="button-text"
                                     onClick={onSubmit}
                                 >
                                     {buttonTitle}
@@ -123,16 +102,16 @@ const WelcomeCard = (props) => {
                             </div>
                         </Form>
                         {navigateRegister && (
-                            <div style={{ fontWeight: 400, fontSize: 14, marginTop: 9, color: '#CCCCCC', display: 'flex', justifyContent: 'center' }}>
+                            <div className="button-bottom-text-container">
                                 <div>Don’t have an account?</div>
-                                <div style={{ marginLeft: 5, color: '#43568E', fontStyle: 'italic', textDecoration: 'underline', cursor: 'pointer' }}>Register</div>
+                                <div className="button-bottom-text-left">Register</div>
                             </div>
                         )}
 
-                        {login && (
-                            <div style={{ fontWeight: 400, fontSize: 14, marginTop: 9, color: '#CCCCCC', display: 'flex', justifyContent: 'center' }}>
+                        {navigateLogin && (
+                            <div className="button-bottom-text-container">
                                 <div>Remember your password?</div>
-                                <div style={{ marginLeft: 5, color: '#43568E', fontStyle: 'italic', textDecoration: 'underline', cursor: 'pointer' }} onClick={() => navigate('/login')}>
+                                <div className="button-bottom-text-left" onClick={() => navigate('/login')}>
                                     Login
                                 </div>
                             </div>
