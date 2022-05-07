@@ -1,5 +1,5 @@
-export function addNew(favUser) {
-    return { type: 'ADDFAV', payload: favUser };
+export function changeSidebar(status) {
+    return { type: 'CHANGE', payload: status };
 }
 
 //ex to use action with fecth

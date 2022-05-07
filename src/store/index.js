@@ -1,9 +1,9 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
-import favReducers from './reducers/favReducers';
+import sidebarReducers from './reducers/sidebarReducers';
 
-const reducers = combineReducers({ favReducers });
+const reducers = combineReducers({ sidebarReducers });
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
