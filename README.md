@@ -13,7 +13,7 @@
 
 1. Clone this repo.
 2. Check to this branch ( _that would be **master**_ ).
-3. Do `npm yarn` to get all depedencies.
+3. Do `yarn` to get all depedencies.
 4. Do `yarn start` to start.
 
 ## Depedencies
