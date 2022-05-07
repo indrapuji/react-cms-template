@@ -9,13 +9,15 @@ function favReducers(state = initialState, action) {
     return state;
 }
 
-function userReducer(state = initialState, action) {
-    if (action.type === 'GETUSER') {
-        return { ...state, users: action.payload };
-    } else if (action.type === 'DETAILUSER') {
-        return { ...state, details: action.payload };
-    }
-    return state;
-}
+//ex to use reducers
+
+// function favReducers(state = initialState, action) {
+//     if (action.type === 'GETUSER') {
+//         return { ...state, users: action.payload };
+//     } else if (action.type === 'DETAILUSER') {
+//         return { ...state, details: action.payload };
+//     }
+//     return state;
+// }
 
 export default favReducers;
